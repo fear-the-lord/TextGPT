@@ -15,7 +15,7 @@ def signup():
 		company_name = form.company_name.data
 		job_role = form.job_role.data
 		result = message(username, recruiter_name, company_name, job_role)
-		print("Hello")
+		print("Hello1")
 		return render_template('user.html', text=result)
 		# return jsonify(data)
 	return render_template('signup.html', form=form)
