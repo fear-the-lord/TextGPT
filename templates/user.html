@@ -2,26 +2,15 @@
 <html>
 	<head>
 		<title>Signup Form</title>
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				background-color: #f4f4f4;
-			}
-
-			h2 {
-				color: #333;
-			}
-			pre {
-				background-color: aquamarine;
-				color: #333;
-				text-align: center;
-
-			}
-		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="../static/css/style.css"/>
 	</head>
 {% block content %}
-<pre>
+<pre id = "result">
 	{{ text }}
 </pre>
+<button id="copy-btn"><i class="fas fa-copy"></i> Copy</button>
+<script src="../static/js/script.js"></script>
+
 
 {% endblock %}
