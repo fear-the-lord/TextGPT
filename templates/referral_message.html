@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Referral Message</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="../static/css/style.css"/>
+	</head>
+	<body onload = "myFunction()">
+		{% block content %}
+		<div id="preloader">
+			<img src="../static/img/loader.gif" alt="Loading...">
+		</div>
+		<pre id="result" class="hidden">
+			{{ text }}
+		</pre>
+		<button id="copy-btn" class="hidden"><i class="fas fa-copy"></i> Copy</button>
+		<script src="../static/js/script.js"></script>
+		{% endblock %}
+	</body>
+</html>

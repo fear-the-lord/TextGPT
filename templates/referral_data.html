@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Referral Form</title>
+		<link rel="stylesheet" href="../static/css/style.css"/>
+	</head>
+	<body>
+		{% block content %}
+		<h2>Referral Form</h2>
+		<form action="" method="post">
+			<div>
+				{{form.username.label}}<br>
+				{{form.username(size=30)}}
+			</div>
+			<div>
+				{{form.recruiter_name.label}}<br>
+				{{form.recruiter_name(size=30)}}
+			</div>
+			<div>
+				{{form.company_name.label}}<br>
+				{{form.company_name(size=30)}}
+			</div>
+			<div>
+				{{form.job_role.label}}<br>
+				{{form.job_role(size=30)}}
+			</div>
+			<div>
+				{{form.submit()}}
+			</div>
+		</form>
+		{% endblock %}
+	</body>
+</html>

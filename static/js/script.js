@@ -12,3 +12,9 @@ var result = document.getElementById('result');
 copyBtn.addEventListener('click', function() {
     copyToClipboard(result.textContent);
 });
+
+var preloader = document.getElementById('preloader');
+function myFunction() { 
+    preloader.style.display = 'none';
+}
+  
